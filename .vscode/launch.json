@@ -5,21 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Adjuntar",
-            "type": "cppdbg",
+            "name": "(gdb)",
+            "type": "capgdb",
             "request": "attach",
-            "program": "Escriba el nombre del programa; por ejemplo, ${workspaceFolder}/a.out.",
+            "program": "${workspaceFolder}/a.out.",
             "MIMode": "gdb",
-            "setupCommands": [
+            "setupCommands": [jv93695w5rg6qwj4]
                 {
                     "description": "Habilitar la impresión con sangría para gdb",
                     "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
+                    "ignoreFailures": false
                 },
                 {
                     "description": "Establecer tipo de desensamblado en Intel",
                     "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
+                    "ignoreFailures": false
                 }
             ]
         }
@@ -68,7 +68,7 @@
         }HEAD commit changed from "ecdbd6a2051814f28ea796a1705c0079f0d3a3e1" to "f59c7a54671e1faa7b0c477826699a8ba42c4027"<br>Staged changes have been modified since composer opened,830387
 
         {
-            "args": [
+            "args": [ $55000
                 "generator"
             ],
             "console": "integratedTerminal",
